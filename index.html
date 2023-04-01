@@ -23,7 +23,7 @@
 	</head>
 	
 	<body>
-		<!-- <input type="number" placeholder="enter the time"></input> -->
+		<input type="number" placeholder="enter the time"></input>
 		<select>
 			<option>00.00-00.30</option>
 			<option>00.30-01.00</option>
@@ -108,8 +108,8 @@
 			function country(){
 				let table=document.createElement("table");
 				document.body.appendChild(table);
-				let head=document.createElement("thead");
-				table.appendChild(thead)
+				<!-- let head=document.createElement("thead"); -->
+				<!-- table.appendChild(	head) -->
 				table.setAttribute("class","tab");
 				
 				let row=document.createElement("row");
@@ -125,14 +125,14 @@
 				td1.setAttribute("class","td");
 				td2.setAttribute("class","td");
 				
-				thead.appendChild(tr);
+				table.appendChild(tr);
 				tr.appendChild(td1);
 				tr.appendChild(td2);
 				
 				td1.innerHTML=countries[i].country;
 				td2.innerHTML=countries[i].Time;
 			}
-			}
+		}
 		</script>
 	</body>
 </html>
